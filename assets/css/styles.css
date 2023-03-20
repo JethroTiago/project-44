@@ -10,9 +10,42 @@
 body {
     text-align: center;
     background: linear-gradient(to bottom, #3dbcdc, #b575cc);
+    min-height: 100vh;
 }
 
 main {
     display: inline-block;
     margin-top: 2%;
+    padding: 15px;
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    left: 29%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 3rem;
+    height: 100vh;
+}
+
+.container h1 {
+    position: absolute;
+    top: 17%;
+    left: 24%;
+    height: 5.5%;
+    font-size: clamp(2px, 4vw, 25px);
+}
+
+.timer {
+    display: flex;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.stopwatch {
+    width: 85%;
 }
